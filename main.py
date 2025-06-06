@@ -11,7 +11,13 @@ def run_killer(txt, txt2):
     seckill_time = txt.get()
     password = str(txt2.get())
     print(seckill_time, password)
-    ChromeDrive(seckill_time = seckill_time, password = password).sec_kill()
+    
+    # 使用优化版秒杀
+    from optimized_sec_kill import optimized_sec_kill_method
+    driver = ChromeDrive(seckill_time = seckill_time, password = password)
+    # 替换原有的sec_kill方法
+    driver.sec_kill = lambda: optimized_sec_kill_method(driver)
+    driver.sec_kill()
 
 
 
