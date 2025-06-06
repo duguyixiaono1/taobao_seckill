@@ -1,0 +1,146 @@
+# =======================
+# 淘宝秒杀项目 .gitignore
+# =======================
+
+# ===== Python =====
+# 字节码文件
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyc
+*.pyo
+*.pyd
+
+# 分发/打包
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# ===== 虚拟环境 =====
+venv/
+.venv/
+env/
+.env/
+ENV/
+env.bak/
+venv.bak/
+
+# ===== IDE配置 =====
+# PyCharm/IntelliJ
+.idea/
+*.iws
+*.iml
+*.ipr
+
+# VS Code
+.vscode/
+*.code-workspace
+
+# Sublime Text
+*.sublime-project
+*.sublime-workspace
+
+# Atom
+.atom/
+
+# ===== 系统文件 =====
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# Linux
+*~
+
+# ===== 项目特定文件 =====
+# 登录相关敏感文件
+cookies.txt
+*.cookie
+session_data.json
+
+# 调试和日志文件
+debug_*.json
+*.log
+*.logs
+seckill_debug.json
+error_*.log
+
+# 浏览器驱动文件
+chromedriver*
+geckodriver*
+msedgedriver*
+*.exe
+
+# 配置文件（可能包含敏感信息）
+config.ini
+local_config.py
+secret_*.py
+
+# 临时文件
+*.tmp
+*.temp
+*.bak
+*.swp
+*.swo
+
+# 测试相关
+.pytest_cache/
+.coverage
+htmlcov/
+.tox/
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+.hypothesis/
+
+# ===== 运行时生成文件 =====
+# 截图和图片
+screenshots/
+*.png
+*.jpg
+*.jpeg
+!icon/*.png
+!icon/*.ico
+
+# 数据文件
+data/
+cache/
+temp/
+
+# ===== 环境变量 =====
+.env
+.env.local
+.env.*.local
+
+# ===== 文档生成 =====
+docs/_build/
+.sphinx/
+
+# ===== Jupyter Notebook =====
+.ipynb_checkpoints
+
+# ===== 其他 =====
+.mypy_cache/
+.dmypy.json
+dmypy.json 
